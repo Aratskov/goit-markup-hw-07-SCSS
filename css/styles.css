@@ -7,6 +7,7 @@
     --background-hero:#2F303A;
     --background-team:#F5F4FA;
     --border-header:#ECECEC;
+    --social-color-team:#AFB1B8;
 }
 
 body{
@@ -108,8 +109,6 @@ h1,h2,h3{
 
 .site-nav{
     display: inline-flex;
-    margin-right: 344px;
-    
 }
 
 .site-nav .item:not(:last-child){
@@ -117,23 +116,46 @@ h1,h2,h3{
 }
 
 .auth-nav{
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 .auth-nav .item +.item{
-    margin-left: 50px;
+    margin-left: 30px;
+}
+
+.auth-nav .item a{
+    display: inline-flex;
+}
+
+.auth-nav .item:hover a{
+    color:var(--alternative-color);
+}
+
+
+.auth-nav .icon{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 /* HERO PAGE */
 
 .hero{
-    background-color: var(--background-hero);
+    max-width: 1600px;
+    height: 600px;
+    background-color: var(--color-text);
+    background-image: url(./images/background.jpg) ;
+    background-position: center;
+    background-size: cover;
     text-align: center;
 }
 
 .hero-title{
-    margin-bottom: 40px;
+    padding-top: 200px;
+    margin-bottom: 30px;
 
     font-weight: 900;
     font-size: 44px;
@@ -171,6 +193,21 @@ h1,h2,h3{
 
 .features{
     display: inline-flex;
+}
+
+.features .item{
+    width: 270px;
+}
+
+.background-icon{
+    background-color: var(--background-team);
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
+
+.features .item .icon{
+    width: 70px;
+    height: 70px;
 }
 
 .features .title{
@@ -252,13 +289,90 @@ h1,h2,h3{
 
 .team-job{
     margin: 0;
-    margin-bottom: 30px;
-
+    
     text-align: center;
     font-size: 16px;
     line-height: 1.19;
 
     color: var(--second-color-text);
+}
+
+/* ICON OUR TEAM */
+
+.social{
+    display: inline-flex;
+    margin:16px 32px 30px 32px;
+}
+
+.social-link{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-decoration: none;
+    color:var(--social-color-team);
+}
+
+.social-link:hover,
+.social-link:focus{
+    color:var(--color-hero-background);
+    background: var(--alternative-color);
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    fill:currentColor
+}
+
+.social-link:not(:last-child){
+    margin-right: 10px;
+}
+
+
+/* BRANDS */
+
+.clients-title{
+    margin-bottom: 50px;
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.clients{
+    display: flex;
+}
+
+.clients .brand-link{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    width: 170px;
+    height: 92px;
+    text-decoration: none;
+    border: 1px solid var(--social-color-team);
+    border-radius: 4px;
+    color: var(--social-color-team);
+}
+
+.clients .item +.item{
+    margin-left: 30px;
+}
+
+.item:hover .brand-link{
+    color:var(--alternative-color);
+    border-color:var(--alternative-color);
+}
+
+.clients .brand-link .icon{
+    width: 106px;
+    height: 60px;
+    fill:currentColor;
 }
 
 /* FOOTER */
@@ -296,7 +410,48 @@ h1,h2,h3{
     color:var(--alternative-color);
 }
 
+.footer-cont{
+    display: flex;
+}
 
+.social-footer{
+    margin-left: 70px;
+}
+
+.social-footer .title{
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--color-hero-background);
+}
+
+.social-logo{
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+.social-logo .social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255,0.1);
+    color:var(--color-hero-background)
+}
+
+.social-logo .social-link:hover{
+    background-color: var(--alternative-color);
+}
+
+.social-logo .social-link .icon{
+    width: 20px;
+    height: 20px;
+    color: currentColor;
+}
 
 /* PORTFOLIO-----PORTFOLIO-----PORTFOLIO */
 
