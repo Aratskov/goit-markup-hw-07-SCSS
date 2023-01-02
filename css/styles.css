@@ -147,7 +147,7 @@ h1,h2,h3{
     max-width: 1600px;
     height: 600px;
     background-color: var(--color-text);
-    background-image: url(./images/background.jpg) ;
+    background-image: linear-gradient(to right,rgb(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(./images/background.jpg) ;
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -364,7 +364,8 @@ h1,h2,h3{
     margin-left: 30px;
 }
 
-.item:hover .brand-link{
+.brand-link:hover,
+.brand-link:focus {
     color:var(--alternative-color);
     border-color:var(--alternative-color);
 }
@@ -443,7 +444,8 @@ h1,h2,h3{
     color:var(--color-hero-background)
 }
 
-.social-logo .social-link:hover{
+.social-logo .social-link:hover,
+.social-logo .social-link:focus{
     background-color: var(--alternative-color);
 }
 
@@ -485,6 +487,7 @@ h1,h2,h3{
 .button-filter:focus{
     color:var(--color-hero-background);
     background-color: var(--alternative-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list.project{
@@ -497,6 +500,10 @@ h1,h2,h3{
     box-sizing: border-box;
     margin-right: 30px;
     margin-bottom: 30px;
+}
+
+.list.project .items:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .list.project .items img{
