@@ -58,7 +58,21 @@
           Ефективні рішення для <br />
           вашого бізнесу
         </h1>
-        <button type="button" class="hero-button">Замовити послугу</button>
+        <button class="hero-button" data-modal-open>Замовити послугу</button>
+
+        <!-- MODAL WINDOWS -->
+
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            
+              <div class="icon-position"data-modal-close>
+                <svg class="icon">
+                <use href="./images/sprite.svg#close"></use>
+              </svg>
+            </div>
+            
+          </div>
+        </div>
       </section>
 
       <!-- Features -->
@@ -124,21 +138,27 @@
               alt="Працюють за комп'ютером"
               width="370"
             />
+            <span class="work-meta">Десктопні додатки</span>
           </li>
+          
           <li class="item">
             <img
               src="./images/box1.jpg"
               alt="Працюють за ноутбуком"
               width="370"
             />
+            <span class="work-meta">Мобільні додатки</span>
           </li>
+          
           <li class="item">
             <img
               src="./images/box2.jpg"
               alt="Працюють за планшетом"
               width="370"
             />
+            <span class="work-meta">Дизайнерські рішення</span>
           </li>
+
         </div>
         </ul>
       </section>
@@ -391,5 +411,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
