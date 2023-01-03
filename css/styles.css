@@ -234,7 +234,7 @@ h1,h2,h3{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.modal button{
+.modal .close-button{
     position: absolute;
     top: 8px;
     right: 8px;
@@ -248,12 +248,117 @@ h1,h2,h3{
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: var(--color-hero-background);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal .close-button:hover,
+.modal .close-button:focus{
+    color:var(--alternative-color);
+    cursor: pointer;
 }
 
 .modal .icon{
     width: 20px;
     height: 20px;
+    fill:currentColor;
 }
+
+/* FORM MODAL */
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form .title{
+    margin-top:50px;
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.field-form{
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.form-label{
+    display: flex;
+    align-content: flex-start;
+    margin-bottom: 4px ;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--second-color-text);
+}
+
+.field-form .comment{
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    outline: none;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.field-form .comment::placeholder{
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form-input{
+    height: 40px;
+    width: 100%;
+    padding-left: 42px;
+    outline: none;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: #212121;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus,
+.comment:focus{
+    border: 1px solid var(--alternative-color);
+    color:var(--alternative-color);
+}
+
+.form-input:focus+.form-icon{
+    color:var(--alternative-color);
+}
+
+.form-icon{
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.field-form + .field-form{
+    margin-top: 10px;
+}
+
+
 
 /* FEATURES */
 .section{

@@ -64,12 +64,49 @@
 
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            
-              <button type="button"data-modal-close>
+            <button type="button" class="close-button" data-modal-close>
                 <svg class="icon">
                 <use href="./images/sprite.svg#close"></use>
-              </svg>
-              </button>
+                </svg>
+            </button>
+
+              <form class="form" autocomplete="off">
+                <h2 class="title">Залиште свої дані, ми вам передзвонимо</h2>
+
+                <label class="field-form">
+                  <span class="form-label">Ім'я</span>
+                  <input type="text" class="form-input" name="name">
+                  <svg class="form-icon">
+                    <use href="./images/sprite.svg#name"></use>
+                  </svg>
+                </label>
+                
+                <label class="field-form">
+                  <span class="form-label">Телефон</span>
+                  <input type="tel" class="form-input" name="tel">
+                  <svg class="form-icon">
+                    <use href="./images/sprite.svg#phone"></use>
+                  </svg>
+                </label>
+
+                
+                <label class="field-form">
+                  <span class="form-label">Пошта</span>
+                  <input type="email" class="form-input" name="email">
+                  <svg class="form-icon">
+                    <use href="./images/sprite.svg#email"></use>
+                  </svg>
+                </label>
+
+                <label class="field-form">
+                  <span class="form-label">Коментар</span>
+                  <textarea name="comment" class="comment" row="5" placeholder="Введіть текст"></textarea>
+                </label>
+                
+                <label class="field-form">
+                  <input type="checkbox" class="form-input" name="checkbox" value="check" class="checkbox">
+                </label>
+              </form>
             
           </div>
         </div>
