@@ -73,7 +73,7 @@
         <!-- FORM MODAL -->
 
               <form class="form" autocomplete="off">
-                <h2 class="title">Залиште свої дані, ми вам передзвонимо</h2>
+                <h1 class="title">Залиште свої дані, ми вам передзвонимо</h1>
 
                 <label class="field-form">
                   <span class="form-label">Ім'я</span>
@@ -107,6 +107,9 @@
                 
                 <label class="field-ugoda">
                   <input type="checkbox" name="checkbox" value="check" class="checkbox">
+                  <svg class="form-icon-ugoda">
+                    <use href="./images/sprite.svg#check"></use>
+                  </svg>
                   <span class="form-ugoda">Погоджуюся з розсилкою та приймаю <a href="" class="">Умови договору</a></span>
                 </label>
 
@@ -448,9 +451,21 @@
               </svg>
             </a>
           </div>
-
-
         </div>
+
+        <div class="form-sign">
+          <h2 class="title">Підпишіться на розсилку</h2>
+          <form class="form-footer" autocomplete="off">
+            <label>
+              <input type="email" name="email" class="input-footer" placeholder="E-mail">
+            </label>
+            <button class="button-sign">Підписатися
+            <svg class="icon-sign">
+              <use href="./images/sprite.svg#send"></use>
+            </svg>
+            </button>
+            
+          </form>
       </div>
     </footer>
 
