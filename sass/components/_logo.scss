@@ -1,0 +1,31 @@
+%logo{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo{
+    @extend %logo;
+    margin-right: 93px;
+    color: $alternative-color;
+
+    &__second{
+        color:$main-color-text;
+    }
+}
+
+.logo-footer{
+    @extend %logo;
+    color: $color-text-btn;
+    margin: 0;
+
+    &__second{
+        color:$alternative-color;
+    }
+}
+
+
+

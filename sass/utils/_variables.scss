@@ -1,0 +1,108 @@
+
+$main-color-text: #212121;
+$second-color-text: #757575;
+$alternative-color: #2196f3;
+$color-hero-text: #ffffff;
+$color-text-btn:#ffffff;
+$color-btn:#2196F3;
+
+$background-hero: #2f303a;
+$background-team: #f5f4fa;
+$border-header: #ececec;
+$social-color-team: #afb1b8;
+$background-project-hover: rgba(33, 150, 243, 0.9);
+$backdrop-modal: rgba(0, 0, 0, 0.2);
+$text-color-footer-form: rgba(255, 255, 255, 0.6);
+
+%title{
+margin-bottom: 50px;
+
+font-size: 36px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.03em;
+color:$main-color-text;
+}
+
+%addressandtextFeatures{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+%nav{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+%btn{
+    display: block;
+    height: 50px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    background-color:$color-btn;
+    color:$color-text-btn;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    cursor: pointer;
+}
+
+%team{
+    font-size: 16px;
+    line-height: 1.17;
+     text-align: center;
+    letter-spacing: 0.03em;
+}
+
+// Это имена,а позиция работы на 400 жирность,а параметры те же
+// font-weight: 500;
+// font-size: 16px;
+// line-height: 1.19;
+/* identical to box height */
+
+// text-align: center;
+
+
+// White text on pictures and head in features
+
+// font-weight: 700;
+// font-size: 14px;
+// line-height: 16px;
+// text-align: center;
+// letter-spacing: 0.03em;
+// text-transform: uppercase;
+// nav
+// font-weight: 500;
+// font-size: 14px;
+// line-height: 16px;
+// letter-spacing: 0.02em;
+
+// color: #212121;
+// text in address podpishi
+// font-weight: 700;
+// font-size: 14px;
+// line-height: 16px;
+// letter-spacing: 0.03em;
+// text-transform: uppercase;
+
+// color: #FFFFFF;
+
+// text in futeres
+
+// color: #757575;
+
+
+
+// text in address
+
+// color: #FFFFFF;

@@ -16,12 +16,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="dist/css/main.min.css" />
   </head>
   <body>
     <!-- HEADER SITE -->
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="navbar">
           <a href="./index.html" class="logo"
             >Web<span class="logo__second">Studio</span></a
@@ -76,7 +76,7 @@
 
         <!-- MODAL WINDOWS -->
 
-        <div class="backdrop is-hidden" data-modal>
+        <!-- <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button type="button" class="modal__close" data-modal-close>
               <svg class="modal__icon">
@@ -86,7 +86,7 @@
 
             <!-- FORM MODAL -->
 
-            <form class="modal-form" autocomplete="off">
+            <!-- <form class="modal-form" autocomplete="off">
               <h1 class="modal-form__title">
                 Залиште свої дані, ми вам передзвонимо
               </h1>
@@ -147,8 +147,8 @@
               </button>
             </form>
           </div>
-        </div>
-      </section>
+        </div> -->
+      </section> 
 
       <!-- Features -->
       <section class="section section-features">
@@ -254,6 +254,7 @@
                 width="270"
                 class="card__photo"
               />
+             <div class="card__wrapper">
               <h3 class="card__name">Ігор Дем'яненко</h3>
               <p class="card__position">Product Designer</p>
 
@@ -296,6 +297,7 @@
                   </svg>
                 </a>
               </div>
+             </div>
             </li>
 
             <li class="card__item">
@@ -305,6 +307,7 @@
                 width="270"
                 class="card__photo"
               />
+              <div class="card__wrapper">
               <h3 class="card__name">Ольга Рєпіна</h3>
               <p class="card__position">Frontend Developer</p>
               <div class="social">
@@ -346,6 +349,7 @@
                   </svg>
                 </a>
               </div>
+              </div>
             </li>
 
             <li class="card__item">
@@ -355,7 +359,8 @@
                 width="270"
                 class="card__photo"
               />
-              <h3 class="card__name">Микола Тарасов</h3>
+              <div class="card__wrapper">
+                <h3 class="card__name">Микола Тарасов</h3>
               <p class="card__position">Marketing</p>
               <div class="social">
                 <a
@@ -396,6 +401,7 @@
                   </svg>
                 </a>
               </div>
+              </div>
             </li>
 
             <li class="card__item">
@@ -405,7 +411,8 @@
                 width="270"
                 class="card__photo"
               />
-              <h3 class="card__name">Михайло Єрмаков</h3>
+              <div class="card__wrapper">
+                <h3 class="card__name">Михайло Єрмаков</h3>
               <p class="card__position">UI Designer</p>
               <div class="social">
                 <a
@@ -445,6 +452,7 @@
                     <use href="./images/sprite.svg#icon-linkedin"></use>
                   </svg>
                 </a>
+              </div>
               </div>
             </li>
           </ul>
@@ -511,8 +519,8 @@
 
     <!-- FOOTER SITE -->
     <footer class="footer">
-      <div class="container">
-        <div>
+      <div class="container footer-container">
+        <div class="address-wrapper">
           <a href="./index.html" class="logo logo-footer"
             >Web<span class="logo-footer__second">Studio</span></a
           >
@@ -545,10 +553,10 @@
           </address>
         </div>
 
-        <div class="social social-footer">
-          <b class="social__title">Приєднуйтесь</b>
+        <div class="social-footer">
+          <b class="social--title">Приєднуйтесь</b>
 
-          <div class="social__logo">
+          <div class="social">
             <a
               href="https://www.instagram.com/"
               class="social__link social__link--footer"
@@ -589,7 +597,7 @@
         </div>
 
         <div class="form-sign">
-          <h2 class="social__title">Підпишіться на розсилку</h2>
+          <b class="social--title">Підпишіться на розсилку</b>
           <form class="subscribe" autocomplete="off">
             <label>
               <input
@@ -601,7 +609,7 @@
             </label>
             <button class="subscribe__button">
               Підписатися
-              <svg class="subscribe__icon">
+              <svg class="subscribe__icon" width="24" height="24" >
                 <use href="./images/sprite.svg#send"></use>
               </svg>
             </button>

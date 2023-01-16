@@ -1,0 +1,17 @@
+@mixin font-text-nav($type:700){
+    font-weight:$type;
+    font-size: 14px;
+    line-height: 1.15;
+}
+
+@mixin flex-xenter{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+@mixin icon{
+    width: 20px;
+    height: 20px;
+}
+
